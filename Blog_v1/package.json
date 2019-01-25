@@ -1,0 +1,17 @@
+{
+  "name": "blog_v1",
+  "version": "1.0.0",
+  "description": "First iteration of a blog site.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "EstenGrove",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.16.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
