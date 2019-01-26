@@ -181,6 +181,11 @@
 
             }
 
+            &_date {
+                margin-left: .2rem;
+                color: #aaa;
+            }
+
             &_para {
                 font-size: 1.5rem;
                 font-family: 'Lora';
@@ -222,7 +227,11 @@
             height: 40rem;
 
             &--text {
-                font-size: 1.7rem;
+
+
+                &_para {
+                    font-size: 1.2rem;
+                }
             }
         }
     }
