@@ -12,16 +12,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Esten Grove">
-    <link rel="stylesheet" href="styles.css">
-    <title>#[[$Title$]]#</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Blog v1.0</title>
 </head>
 
 <body>
-    #[[$END$]]#
+    <section class="navWrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="#" class="nav-logo_link">Echo</a>
+                <a href="#" class="nav-logo_link">Blog</a>
+            </div>
+            <div class="icons">
+                <svg class="icon">
+                    <use xlink:href="/media/sprite.svg#icon-github-with-circle"></use>
+                </svg>
+            </div>
+            <div class="icons">
+                <svg class="icon">
+                    <use xlink:href="/media/sprite.svg#icon-linkedin-with-circle"></use>
+                </svg>
+            </div>
+            <div class="icons">
+                <svg class="icon">
+                    <use xlink:href="/media/sprite.svg#icon-twitter-with-circle"></use>
+                </svg>
+            </div>
+        </nav>
+    </section>
+    <section class="header-wrapper">
+        <header class="header">
+            <div class="header-title">
+                <h2 class="header-title__text"><u>Echo Blog</u></h2>
+            </div>
+        </header>
+    </section>
 
-  <script type="text/javascript" src="app.js">
+    <!-- Main Content Section -->
+    <section class="wrapper-large marginTop-xlarge marginBottom-large">
+        <main class="main-container">
+            <div class="main-container_card"></div>
+            <div class="main-container_card"></div>
+            <div class="main-container_card"></div>
+            <div class="main-container_card"></div>
+        </main>
+    </section>
 
-  </script>
+    <section class="wrapper-small">
+        <div class="img-container">
+            <div class="img-container__content">
+                <h4 class="img-container__content--title">Build a Real-Time Markdown Editor with Vue.js</h4>
+                <button class="btn">Read more</button>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="app.js">
+
+    </script>
 </body>
 
 </html>

@@ -1,24 +1,164 @@
-/******************************************
-*  Author : Esten Grove   
-*  Created On : Fri Jan 25 2019
-*  File : styles.css
-*******************************************/
-:root {    
-    font-size: calc(1vw + 1vh + .5vmin);  
-}
+.marginTop {
+  margin-top: 3rem; }
+  .marginTop-large {
+    margin-top: 6rem; }
+  .marginTop-xlarge {
+    margin-top: 10rem; }
+
+.marginBottom {
+  margin-bottom: 3rem; }
+  .marginBottom-large {
+    margin-bottom: 6rem; }
+  .marginBottom-xlarge {
+    margin-bottom: 10rem; }
+
+.wrapper {
+  max-width: 100vw; }
+  .wrapper-small {
+    min-height: 20rem; }
+  .wrapper-medium {
+    min-height: 60rem; }
+  .wrapper-large {
+    min-height: 100vh; }
+
+.btn {
+  padding: 1rem 1.5rem;
+  font-size: 1.3rem;
+  border: none;
+  outline: none;
+  border-radius: .3rem;
+  background: #8a5cea;
+  color: #fff;
+  box-shadow: 3px 10px 20px -4px rgba(0, 0, 0, 0.75);
+  transition: all .2s ease-in-out; }
+  .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1); }
+
+.navWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 6rem;
+  background: #fff; }
+
+.nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .navLink {
+    padding: 1rem; }
+  .nav-logo {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Permanent Marker'; }
+    .nav-logo_link {
+      letter-spacing: -.1rem;
+      text-decoration: none;
+      color: #8a5cea; }
+
+.icons {
+  justify-self: flex-end;
+  width: 2rem;
+  margin-right: 1rem; }
+  .icons:hover {
+    cursor: pointer; }
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  fill: #222; }
+  .icon:hover {
+    fill: #8a5cea; }
+
+.header-wrapper {
+  max-width: 100vw;
+  height: calc(1vw + 80vh + .5vmin);
+  margin-top: 6rem; }
+
+.header {
+  margin-top: 6rem;
+  width: 100%;
+  height: 100%;
+  background: url("/media/imgs/CodingImages.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .header-title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header-title__text {
+      font-family: "Abril Fatface";
+      font-size: 6rem;
+      letter-spacing: .5rem;
+      color: #fff; }
+
+.main-container {
+  width: 100vw;
+  min-height: 60rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 60rem);
+  grid-template-rows: repeat(auto-fit, 40rem);
+  justify-content: center;
+  grid-gap: 3rem 2rem; }
+  .main-container_card {
+    height: 40rem;
+    border: 1px solid #aaa;
+    border-radius: .5rem;
+    box-shadow: 3px 10px 20px -4px rgba(0, 0, 0, 0.35); }
+
+@media (max-width: 625px) {
+  .main-container {
+    grid-template-columns: repeat(auto-fit, 90%);
+    grid-template-rows: repeat(auto-fit, 40rem); }
+    .main-container_card {
+      height: 40rem; } }
+
+.img-container {
+  display: block;
+  width: 100%;
+  height: 40rem;
+  background: url("/media/imgs/CodeDisplay.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(138, 92, 234, 0.25);
+  background-blend-mode: hard-light; }
+  .img-container__content {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .img-container__content--title {
+      max-width: 35rem;
+      margin-bottom: 2rem;
+      padding: 0 2rem;
+      font-family: "Abril Fatface";
+      text-align: center;
+      color: #fff;
+      font-size: 2.5rem;
+      background: #111; }
+
 *,
 *::after,
 *::before {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-        
-}
-body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 html {
-	font-size: 62.5%;
-}
+  font-size: 62.5%; }
+
+body {
+  position: relative; }

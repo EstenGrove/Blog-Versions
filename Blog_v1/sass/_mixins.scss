@@ -1,0 +1,6 @@
+// Mixin "Rounded Edges"
+@mixin rounding {
+    border: 1px solid #aaa;
+    border-radius: .5rem;
+    box-shadow: $lightbox;
+}

@@ -1,0 +1,24 @@
+// Margin Spacings
+.marginTop {
+    margin-top: 3rem;
+
+    &-large {
+        margin-top: 6rem;
+    }
+
+    &-xlarge {
+        margin-top: 10rem;
+    }
+}
+
+.marginBottom {
+    margin-bottom: 3rem;
+
+    &-large {
+        margin-bottom: 6rem;
+    }
+
+    &-xlarge {
+        margin-bottom: 10rem;
+    }
+}
